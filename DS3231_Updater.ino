@@ -21,9 +21,13 @@ void setup() {
   Serial.begin(9600);
   rtc.begin();
 
+  // __TIME__ is coordinated with UTC time, but your environment is likely to adjust the time baesd off your OS
   int hours, minutes, seconds;
   sscanf(__TIME__, "%d:%d:%d", &hours, &minutes, &seconds);
 
+  
+  // Each variable could, and should, be hardcoded if the offbalanced time is constant.
+  // For example, seconds constantly being 6 seconds off can be fixed by '..., seconds + 6)'
   rtc.setTime(hours, minutes, seconds);
 
   int day, month, year;
