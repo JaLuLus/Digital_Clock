@@ -11,13 +11,14 @@ Arduino Digital clock using
 After downloading DS3231.zip go to your arduino IDE; Sketch > Include Library > ADD .ZIP Library
 
 
-Before running the 'Digital_clock.ino', make sure to run 'DS3231_Updater.ino' first. This is to ensure
-  that the RTC will be calibrated to your time based off your OS. You can then run Digital_Clock.ino.
+Mke sure to run 'DS3231_Updater.ino' first to update the RTC time. Depending on your development environment, or system, 
+the time may or may not be set automatically based off your OS.
+If it isn't automatically calibrated, there are instructions in 'DS3231_Updater.ino' to recalibrate.
+You can then directly run Digital_Clock.ino 
 
 
 !Note!
 The RTC seems to be a couple (6-7) seconds off, may vary from module to module. 
-Could be fixed through hardcoding the fix. For me that would be adding 6 to seconds.
 
 No Arduino schematics yet.
 
