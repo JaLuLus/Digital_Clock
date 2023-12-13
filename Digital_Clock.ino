@@ -53,15 +53,6 @@ void loop() {
     digitalWrite(7, LOW);
   }
 
-  
-
-  // Serial.println(String(hVal) + " " + String(mVal));
-  // LED Tester
-  // for (int i = 2; i < 14; i++) {
-  //   digitalWrite(i, HIGH);
-  // }
-
-
   for (int i = 3; i >= 0; i--) {
       if ((hVal - bHour[i]) >= 0) {
         hVal = hVal - bHour[i];
@@ -81,9 +72,7 @@ void loop() {
       digitalWrite(y + 8, LOW);
     }
   }
-
-  // Serial.println(String(hVal) + " " + String(mVal));
-
+  
   // RTC Checker
 
   // Send Day-of-Week
@@ -97,4 +86,5 @@ void loop() {
 
   // Wait one second before repeating
   delay(1000);
+  // end of RTC Checker
 }
