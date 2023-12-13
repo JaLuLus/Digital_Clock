@@ -10,6 +10,7 @@ Arduino Digital clock using
 
 After downloading DS3231.zip go to your arduino IDE; Sketch > Include Library > ADD .ZIP Library
 
+There is a .png schematic, as well as a .fzz. (Fritzing)
 
 Mke sure to run 'DS3231_Updater.ino' first to update the RTC time. Depending on your development environment, or system, 
 the time may or may not be set automatically based off your OS.
@@ -19,6 +20,3 @@ You can then directly run Digital_Clock.ino
 
 !Note!
 The RTC seems to be a couple (6-7) seconds off, may vary from module to module. 
-
-No Arduino schematics yet.
-
