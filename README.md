@@ -4,7 +4,7 @@ Arduino Digital clock using
 - 13 LEDS
 - DS3231 RTC
 - Breadboard
-- Wires (ofc)
+- Wires
 
 !!! Make sure to download and implement the provided library !!! 
 
